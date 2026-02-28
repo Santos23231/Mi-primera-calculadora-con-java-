@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora iPhone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculadora">
+
+    <input type="text" id="pantalla" readonly>
+
+    <div class="botones">
+        <button class="gris" onclick="limpiar()">AC</button>
+        <button class="gris" onclick="agregar('%')">%</button>
+        <button class="gris" onclick="agregar('/')">÷</button>
+        <button class="operador" onclick="agregar('*')">×</button>
+
+        <button class="numero" onclick="agregar('7')">7</button>
+        <button class="numero" onclick="agregar('8')">8</button>
+        <button class="numero" onclick="agregar('9')">9</button>
+        <button class="operador" onclick="agregar('-')">−</button>
+
+        <button class="numero" onclick="agregar('4')">4</button>
+        <button class="numero" onclick="agregar('5')">5</button>
+        <button class="numero" onclick="agregar('6')">6</button>
+        <button class="operador" onclick="agregar('+')">+</button>
+
+        <button class="numero" onclick="agregar('1')">1</button>
+        <button class="numero" onclick="agregar('2')">2</button>
+        <button class="numero" onclick="agregar('3')">3</button>
+        <button class="operador" onclick="calcular()">=</button>
+
+        <button class="numero cero" onclick="agregar('0')">0</button>
+        <button class="numero" onclick="agregar('.')">.</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
